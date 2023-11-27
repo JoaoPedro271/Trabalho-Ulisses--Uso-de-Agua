@@ -2,19 +2,34 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    
+    line-height: 25px; 
+}
+.test{
+    position: relative;
+    top: 80px;
+    margin-bottom: 700px;
+}
+.background-header {
+    background-image: url(water.png); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 150px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke: 1px #333;
+    
 }
 .imagem1 {
-    width: 90px; 
+    width: 15%;
     position: relative;
-    bottom: 80px;
-    left: 300px;
+    top: 100px;
+    right: 200px;
 }
-.imagem2 {
-    width: 80px; 
-    position: relative;
-    bottom: 80px;
-    right: 300px;
-}
+
 
 .barra-superior {
     background-color: lightblue;
@@ -29,39 +44,16 @@ body {
     color: #fff;
     padding: 10px;
     text-align: center;
-    position:static;
+    position: fixed;
     bottom: 0;
     width: 100%;
-
-    
-
 }
 
 main {
+    flex: 1;
     padding: 20px;
+    text-align: justify;
+    margin: auto; 
+    max-width: 800px; 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Define a altura da viewport */
-}
-
-.box {
-    border: 1px solid #333;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    background-color:rgb(184, 247, 184);
-}
-
-.big-box {
-    width: 80%;
-}
-
-.small-box {
-    width: 40%;
-}
